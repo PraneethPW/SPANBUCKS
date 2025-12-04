@@ -2,21 +2,20 @@
 import type { FeaturedProject } from "../types/featuredProject";
 import projectsJson from "../content/featuredProjects.json";
 
-// image imports so Vite resolves them
-import resaleImg from "../assets/resale.jpg";
-import constructionImg from "../assets/construction.jpg";
-import propertyImg from "../assets/property.jpg";
-import landImg from "../assets/land.jpg";
-import projectImg from "../assets/project.jpg";
-import interiorImg from "../assets/interior.jpg";
+import luxuryVillasImg from "../assets/luxuryvillas.webp";
+import skylineImg from "../assets/skyline.webp";
+import beachfrontImg from "../assets/beachfront.webp";
+import greenfieldImg from "../assets/greenfield.webp";
+import urbanHeightsImg from "../assets/Urbanheights.webp";
+import countrysideImg from "../assets/countryside.webp";
 
 const imageMap: Record<string, string> = {
-  "resale.jpg": resaleImg,
-  "construction.jpg": constructionImg,
-  "property.jpg": propertyImg,
-  "land.jpg": landImg,
-  "project.jpg": projectImg,
-  "interior.jpg": interiorImg
+  "luxuryvillas.webp": luxuryVillasImg,
+  "skyline.webp": skylineImg,
+  "beachfront.webp": beachfrontImg,
+  "greenfield.webp": greenfieldImg,
+  "Urbanheights.webp": urbanHeightsImg,
+  "countryside.webp": countrysideImg
 };
 
 const projects = projectsJson as FeaturedProject[];
@@ -36,11 +35,13 @@ export default function FeaturedProjectsSection() {
               <div className="absolute -inset-[1px] rounded-2xl bg-gradient-to-br from-amber-400/40 via-amber-300/20 to-amber-500/40 opacity-0 blur group-hover:opacity-100 group-hover:blur-lg transition duration-300" />
               <div className="relative h-full rounded-2xl bg-[#020617] border border-slate-700/60 shadow-[0_18px_40px_rgba(0,0,0,0.75)] overflow-hidden flex flex-col">
                 <div className="h-44 w-full overflow-hidden">
-                  <img
-                    src={imageMap[p.image]}
-                    alt={p.title}
-                    className="h-full w-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-                  />
+                <img
+  src={imageMap[p.image] ?? luxuryVillasImg}
+  alt={p.title}
+  loading="lazy"
+  className="h-full w-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+/>
+
                 </div>
 
                 <div className="p-5 flex-1 flex flex-col items-center text-center">

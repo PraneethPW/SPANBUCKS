@@ -1,5 +1,5 @@
 // src/sections/CompanyIntroSection.tsx
-import introImg from "../assets/about.jpg";
+import introImg from "../assets/about.webp";
 
 export default function CompanyIntroSection() {
   return (

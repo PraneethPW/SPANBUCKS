@@ -1,7 +1,7 @@
 // src/components/Navbar.tsx
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
-import logo from "../assets/logomain.png"; // adjust path if needed
+import logo from "../assets/logomain.webp"; // adjust path if needed
 
 const navItems = [
   { name: "Home", path: "/" },

@@ -1,5 +1,5 @@
 // src/sections/FounderSection.tsx
-import chairman from "../assets/chairman.jpeg";
+import chairman from "../assets/chairman.webp";
 
 export default function FounderSection() {
   return (

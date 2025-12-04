@@ -2,8 +2,9 @@
 import { useState } from "react";
 import homeContent from "../content/home.json";
 
-import landingImg from "../assets/landing.jpg";
-import slide2Img from "../assets/slide2.jpg";
+import landingImg from "../assets/landing.webp";
+import slide2Img from "../assets/slide2.webp";
+import logo from "../assets/logomain.webp"; // adjust name/path if needed
 
 type HomeContent = {
   hero: { title: string; subtitle: string };
@@ -38,6 +39,17 @@ export default function Hero() {
       </div>
 
       <div className="relative max-w-3xl">
+        {/* centered logo above title */}
+        <div className="flex justify-center mb-6">
+          <div className="h-[7.5rem] w-[7.5rem] md:h-[8.75rem] md:w-[8.75rem] rounded-full overflow-hidden border-[3px] border-amber-400/90 shadow-[0_0_40px_rgba(250,204,21,0.95)] bg-black/70">
+            <img
+              src={logo}
+              alt="Spanbucks logo"
+              className="h-full w-full object-cover"
+            />
+          </div>
+        </div>
+
         <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-amber-400 drop-shadow-[0_0_18px_rgba(0,0,0,0.8)]">
           {content.hero.title}
         </h1>
@@ -45,6 +57,9 @@ export default function Hero() {
           {content.hero.subtitle}
         </p>
       </div>
+
+
+
 
       {/* floating round image-switch button */}
       <button

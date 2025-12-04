@@ -4,42 +4,42 @@
       "location": "Hyderabad, India",
       "description": "Exclusive gated community with premium amenities and green spaces.",
       "price": "₹2.5 Cr Onwards",
-      "image": "resale.jpg"
+      "image": "luxuryvillas.webp"
     },
     {
       "title": "Skyline Apartments",
       "location": "Hyderabad, India",
       "description": "Modern high-rise apartments with city views and top-notch facilities.",
       "price": "₹1.8 Cr Onwards",
-      "image": "construction.jpg"
+      "image": "skyline.webp"
     },
     {
       "title": "Beachfront Homes",
       "location": "Goa, India",
       "description": "Seaside residences offering serene views and a luxurious lifestyle.",
       "price": "₹3.2 Cr Onwards",
-      "image": "property.jpg"
+      "image": "beachfront.webp"
     },
     {
       "title": "Greenfield Township",
       "location": "Hyderabad, India",
       "description": "An eco-friendly township with sustainable living solutions.",
       "price": "₹90L Onwards",
-      "image": "land.jpg"
+      "image": "greenfield.webp"
     },
     {
       "title": "Urban Heights",
       "location": "Hyderabad, India",
       "description": "Premium apartments with high-end security and amenities.",
       "price": "₹2.0 Cr Onwards",
-      "image": "project.jpg"
+      "image": "Urbanheights.webp"
     },
     {
       "title": "Countryside Villas",
       "location": "Hyderabad, India",
       "description": "Spacious villas surrounded by nature and peaceful living.",
       "price": "₹1.5 Cr Onwards",
-      "image": "interior.jpg"
+      "image": "countryside.webp"
     }
   ]
   

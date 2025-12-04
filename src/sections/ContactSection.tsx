@@ -1,5 +1,23 @@
 // ContactSection.tsx
+import { useState } from "react";
+
 export default function ContactSection() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleWhatsApp = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const phone = "918374606752"; // founder's number without '+'
+    const text = `Hi, this is ${name || "a visitor"} from the Spanbucks website.%0AEmail: ${
+      email || "-"
+    }%0A%0A${message || "I would like to know more about your projects."}`;
+
+    const url = `https://wa.me/${phone}?text=${text}`;
+    window.open(url, "_blank");
+  };
+
   return (
     <section className="relative py-20">
       {/* same radial glow feel */}
@@ -19,23 +37,35 @@ export default function ContactSection() {
           <div className="relative group">
             {/* glow border */}
             <div className="absolute -inset-[1px] rounded-2xl bg-gradient-to-br from-amber-400/40 via-amber-300/20 to-amber-500/40 opacity-0 blur group-hover:opacity-100 group-hover:blur-lg transition duration-300" />
-            <form className="relative grid gap-6 bg-[#020617] p-8 rounded-2xl border border-slate-700/60 shadow-[0_18px_40px_rgba(0,0,0,0.75)]">
+            <form
+              onSubmit={handleWhatsApp}
+              className="relative grid gap-6 bg-[#020617] p-8 rounded-2xl border border-slate-700/60 shadow-[0_18px_40px_rgba(0,0,0,0.75)]"
+            >
               <input
                 type="text"
                 placeholder="Your Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 className="p-3 rounded-lg bg-black/40 border border-slate-700 text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-400"
               />
               <input
                 type="email"
                 placeholder="Your Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="p-3 rounded-lg bg-black/40 border border-slate-700 text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-400"
               />
               <textarea
                 placeholder="Your Message"
                 rows={5}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 className="p-3 rounded-lg bg-black/40 border border-slate-700 text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-400"
               ></textarea>
-              <button className="w-full bg-amber-400 hover:bg-amber-500 text-slate-900 py-3 rounded-lg text-lg font-semibold transition shadow-[0_0_25px_rgba(250,204,21,0.8)] hover:shadow-[0_0_40px_rgba(250,204,21,1)]">
+              <button
+                type="submit"
+                className="w-full bg-amber-400 hover:bg-amber-500 text-slate-900 py-3 rounded-lg text-lg font-semibold transition shadow-[0_0_25px_rgba(250,204,21,0.8)] hover:shadow-[0_0_40px_rgba(250,204,21,1)]"
+              >
                 Send Message
               </button>
             </form>

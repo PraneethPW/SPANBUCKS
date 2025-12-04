@@ -1,9 +1,8 @@
 [
-    { "value": "8+", "label": "Years of Experience" },
-    { "value": "500+", "label": "Happy Clients" },
-    { "value": "150+", "label": "Total Projects" },
-    { "value": "40+", "label": "Ongoing Projects" },
-    { "value": "90+", "label": "Completed Projects" },
-    { "value": "20+", "label": "Upcoming Projects" }
-  ]
-  
+  { "value": "8+", "label": "Years of Experience" },
+  { "value": "500+", "label": "Happy Clients" },
+  { "value": "150+", "label": "Total Projects" },
+  { "value": "40+", "label": "Ongoing Projects" },
+  { "value": "90+", "label": "Completed Projects" },
+  { "value": "20+", "label": "Upcoming Projects" }
+]

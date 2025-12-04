@@ -1,6 +1,5 @@
 // src/types/stat.ts
 export interface Stat {
-    value: string;
-    label: string;
-  }
-  
+  value: string;
+  label: string;
+}

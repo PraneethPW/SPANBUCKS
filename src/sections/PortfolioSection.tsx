@@ -4,38 +4,38 @@ import servicesJson from "../content/services.json";
 import ServiceCard from "../components/ServiceCard";
 
 // import images so Vite resolves them
-import architecturalImg from "../assets/architectural_design.jpg";
-import investmentImg from "../assets/investment.jpg";
-import resaleImg from "../assets/resale.jpg";
-import roadImg from "../assets/road.jpg";
-import constructionImg from "../assets/construction.jpg";
-import gardeningImg from "../assets/gardening.jpg";
-import projectImg from "../assets/project.jpg";
-import smarthomeImg from "../assets/smarthome.jpg";
-import legalImg from "../assets/legal.jpg";
-import certificateImg from "../assets/certificate.jpg";
-import interiorImg from "../assets/interior.jpg";
-import landImg from "../assets/land.jpg";
-import propertyImg from "../assets/property.jpg";
-import loansImg from "../assets/loans.jpg";
-import crowdfundingImg from "../assets/crowdfunding.jpg";
+import architecturalImg from "../assets/architectural_design.webp";
+import investmentImg from "../assets/investment.webp";
+import resaleImg from "../assets/resale.webp";
+import roadImg from "../assets/road.webp";
+import constructionImg from "../assets/construction.webp";
+import gardeningImg from "../assets/gardening.webp";
+import projectImg from "../assets/project.webp";
+import smarthomeImg from "../assets/smarthome.webp";
+import legalImg from "../assets/legal.webp";
+import certificateImg from "../assets/certificate.webp";
+import interiorImg from "../assets/interior.webp";
+import landImg from "../assets/land.webp";
+import propertyImg from "../assets/property.webp";
+import loansImg from "../assets/loans.webp";
+import crowdfundingImg from "../assets/crowdfunding.webp";
 
 const imageMap: Record<string, string> = {
-  "architectural_design.jpg": architecturalImg,
-  "investment.jpg": investmentImg,
-  "resale.jpg": resaleImg,
-  "road.jpg": roadImg,
-  "construction.jpg": constructionImg,
-  "gardening.jpg": gardeningImg,
-  "project.jpg": projectImg,
-  "smarthome.jpg": smarthomeImg,
-  "legal.jpg": legalImg,
-  "certificate.jpg": certificateImg,
-  "interior.jpg": interiorImg,
-  "land.jpg": landImg,
-  "property.jpg": propertyImg,
-  "loans.jpg": loansImg,
-  "crowdfunding.jpg": crowdfundingImg
+  "architectural_design.webp": architecturalImg,
+  "investment.webp": investmentImg,
+  "resale.webp": resaleImg,
+  "road.webp": roadImg,
+  "construction.webp": constructionImg,
+  "gardening.webp": gardeningImg,
+  "project.webp": projectImg,
+  "smarthome.webp": smarthomeImg,
+  "legal.webp": legalImg,
+  "certificate.webp": certificateImg,
+  "interior.webp": interiorImg,
+  "land.webp": landImg,
+  "property.webp": propertyImg,
+  "loans.webp": loansImg,
+  "crowdfunding.webp": crowdfundingImg
 };
 
 const services = servicesJson as Service[];
