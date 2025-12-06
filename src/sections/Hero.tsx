@@ -38,7 +38,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/65 to-[#020617]/95" />
       </div>
 
-      <div className="relative max-w-3xl">
+          <div className="relative max-w-3xl">
         {/* centered logo above title */}
         <div className="flex justify-center mb-6">
           <div className="h-[7.5rem] w-[7.5rem] md:h-[8.75rem] md:w-[8.75rem] rounded-full overflow-hidden border-[3px] border-amber-400/90 shadow-[0_0_40px_rgba(250,204,21,0.95)] bg-black/70">
